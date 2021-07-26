@@ -1,10 +1,13 @@
-# Glass - Example
-A basic shard that demonstrates **optional implementations**, and **interfaces**.
+# Clarity
+A shard with the main goal of improving performance, both through greater control of settings and general optimizations.
 
-# Basic Information
-A lot of stuff will be more complex than other mod loaders, but it should be make easier in the future. Also keep in mind that glass is in design more complex, so there will always be a little more complex.
+## Performance-Enhancing Changes
 
-**impl directory(s):** Used for optional implementations (in short, sections of code that are only loaded / ran if their dependencies have already been loaded). In this example they are used for applying the shard to multiple versions.
+ - **Chunk Updater Decrease**: Only use one thread that listens for and executes chunk updates.
+ - **Chunk Update Limiter**: Sleep the current thread for a customizable amount of time before loading the next chunk.
+ - **Frustum Update Limiter**: Only update the view frustum every so often (customizable).
+
+None of the optimizations do a whole lot currently, and only apply to 1.8.9.
 
 # Setup
 Instructions should be relatively clear, but don't be afraid to ask because there is very likely to be something missing.

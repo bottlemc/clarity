@@ -1,0 +1,10 @@
+id = "clarity"
+version = "0.1.0"
+
+implementations = [
+    "1.8.9"
+]
+
+[environment]
+    [environment.has]
+    client = "*"

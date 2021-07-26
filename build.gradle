@@ -7,12 +7,8 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.github.glassmc:kiln:v0.4.4'
+        classpath 'com.github.glassmc:kiln:v0.4.7'
     }
-}
-
-plugins {
-    id 'com.github.johnrengelman.shadow' version '7.0.0'
 }
 
 apply plugin: 'kiln-standard'
@@ -29,4 +25,5 @@ repositories {
 
 dependencies {
     runtimeOnly 'com.github.glassmc:loader:v0.4.0'
+    api 'com.github.glassmc:loader:v0.4.0'
 }

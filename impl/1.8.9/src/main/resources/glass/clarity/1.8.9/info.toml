@@ -1,0 +1,13 @@
+namespace = "com.github.glassmc.clarity.v1_8_9"
+
+[listeners]
+initialize = [
+    "ClarityInitializeListener"
+]
+terminate = [
+    "ClarityTerminateListener"
+]
+
+[environment]
+    [environment.has]
+    client = "1.8.9"
